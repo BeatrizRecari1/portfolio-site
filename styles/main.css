@@ -1,0 +1,61 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  } 
+  
+  h1 {
+        font-family: "Shrikhand", cursive;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+        transition: 1.1s;
+        display: block;
+        }
+    img { 
+        width: 25%;
+        border: 5px solid yellow;
+        box-shadow: 4px 16px 174px -148px rgba(230,17,17,0.39);
+        -webkit-box-shadow: 4px 16px 174px -148px rgba(230,17,17,0.39);
+        -moz-box-shadow: 4px 16px 174px -148px rgba(230,17,17,0.39);
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+
+        }
+
+        img.img1 {
+            filter: sepia(200);
+            position: relative;
+            right: 20px;
+            /* z-index: -20 !important; */
+        }
+
+        img.img2 {
+            filter: blur(10px);
+            position: relative;
+            top: 50px;
+            /* z-index: -10 !important; */
+        }
+
+        img.img3 {
+            filter: grayscale(1);
+        }
+    #info {
+        width: 100%;
+        height: 300px;
+        border: 1px solid black;
+        background-color: blueviolet;
+        background-image: url(../images/images-1.jpeg);
+        /* background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,121,9,1) 18%, rgba(0,212,255,1) 100%); */
+    }
+
+    #info p {
+        color: white;
+    }
+        
+    
