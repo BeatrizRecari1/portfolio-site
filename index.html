@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-<link rel="stylesheet" href="./styles/dark.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio Site</title>
-<head>
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Week 4, Day 2: UL CSS </title>
+</head>
 
 
 <body>
-</header>
-<a href="mailto:info@info.com">info@info.com</a>
-<a href="tel:410-428-6363">410-428-6363</a>
-<a href="https://google.com" tarfet
+
+<header>
+  <h1>Week 4, Day 2: CSS</h1>
+  <p><a href="https://github.com/bocacode/css-part2-c9" target="_blank"><strong>github.com/bocacode/css-part2-c9</strong></a></p>
 </header>
 
+<nav>
+  <h2>UL Nav</h2>
+  <ul>
+    <li><a href="">Page 1</a></li>
+    <li><a href="">Page 2</a></li>
+    <li><a href="">Page 3</a></li>
+  </ul>
+</nav>
 
+<!-- <section class="section2">
+  <h2>Display None vs Visibility Hidden</h2>
+  
+  <div class="css-display">
+    <p>Box 1</p>
+  </div>
+  <div class="css-visibility">
+    <p>Box 2</p>
+  </div>  
+</section> -->
 
 <section>
-<p>Write a little bio about yourself.</p>
+    <div class="flex-container" id="image-loop">
+
+    </div>
 </section>
 
-<section>
-    <a href="about.html"><img 
-        src="./images/images-1.jpeg" 
-        class="img1"
-        alt="Tree in South Florida" /></a>
+<script>
+let result = "";
+const loopTotal = 19;
+const imageX = 200;
+const imageY = 200;
+const url = `https://picsum.photos/${imageX}/${imageY}?random=`;
 
-    <a href="portfolio.html"><img 
-        src="./images/images.jpeg" 
-        alt="Two plants in a pot with yellow background" /></a>
+function loopImage (imageUrl) {
+  for (let i=0; i<loopTotal; i++) {
+    result += `<div><img src=${imageUrl}${i}></div>`
+  }
 
-    <a href="contact.html"><img 
-        src="./images/Unknown.jpeg" 
-        alt="red tree" /></a>
-<section id="info">
-    <p>These are plants found in Florida. Located in Zone 1-2</p>
+  document.getElementById("image-loop").innerHTML = result;
+}
 
-</section>
-
-<footer>
-    <small>Copywright <script>document.write(new Date().getFullYear())</script> Jiho Sohn</small>
-</footer>
-
+loopImage(url)
+</script>
 </body>
 </html>
